@@ -1,0 +1,25 @@
+﻿<Window x:Class="RHMenagment.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RHMenagment"
+        mc:Ignorable="d"
+        Title="Login"  Height="550.495" Width="500" Background="AliceBlue">
+    
+    <Border Background="Black" CornerRadius="40" Margin="40">
+        <StackPanel Margin="35">
+            <Label Content="Login" Foreground="White" FontSize="35" HorizontalAlignment="Center" ></Label>
+            <Separator></Separator>
+            <Label Content="Username" Foreground="White" HorizontalAlignment="Center" Margin="10"></Label>
+            <TextBox x:Name="txtUsername" Width="250" Background="DarkOliveGreen" FontSize="25" Margin="10"></TextBox>
+            <Separator></Separator>
+            <Label Content="Password" HorizontalAlignment="Center" Foreground="White" Margin="10"></Label>
+            <PasswordBox x:Name="txtPassword" Width="250" Background="DarkOliveGreen" FontSize="25" Margin="10"></PasswordBox>
+            <Separator></Separator>
+            <Button Name="btnSubmit" Background="OliveDrab" Content="Submit" FontSize="35" Width="150" Margin="60 25" Click="BtnSubmit_Click"></Button>
+            
+            
+        </StackPanel>
+    </Border>
+</Window>
